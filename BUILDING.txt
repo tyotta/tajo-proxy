@@ -1,0 +1,15 @@
+Build instructions for Tajo-Proxy
+
+--------------------------------------------------------------------------------
+Requirements:
+
+* Unix System
+* JDK 1.6 or higher
+* Maven 3.0 or higher
+* Protocol Buffers 2.5.0
+* Internet connection for first build (to fetch all Maven and Tajo-Proxy dependencies)
+
+--------------------------------------------------------------------------------
+
+mvn clean package -DskipTests -Pdist -Dtar -Dtajo.src=/Users/test/tajo-0.9.0
+mvn clean package -DskipTests -Pdist -Dtar -Dtajo.src=/home/hadoop/dtlab_tajo/tajo-0.9.1-CDH5.2.0/

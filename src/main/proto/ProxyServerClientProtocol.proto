@@ -1,0 +1,155 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+option java_package = "org.apache.tajo.proxy.ipc";
+option java_outer_classname = "ProxyServerClientProtocol";
+option java_generic_services = true;
+option java_generate_equals_and_hash = true;
+ 
+import "tajo_protos.proto";
+import "TajoIdProtos.proto";
+import "PrimitiveProtos.proto";
+import "ClientProtos.proto";
+import "CatalogProtos.proto";
+
+message ProxyQueryResultRequest {
+  required GetQueryResultRequest resultRequestMeta = 1;
+  required int32 fetchSize = 2;
+}
+
+message ProxyQueryResult {
+  required GetQueryStatusResponse queryStatus = 1;
+  optional TableDescProto tableDesc = 2;
+  repeated bytes rows = 3;
+  optional SchemaProto schema = 4;
+}
+
+message ServerResponse {
+  required ResultCode resultCode = 1;
+  optional BoolProto boolResult = 2;
+  optional string errorMessage = 3;
+  optional string detailErrorMessage = 4;
+  optional SessionIdProto sessionId = 5;
+}
+
+message CloseQueryRequest {
+  optional SessionIdProto sessionId = 1;
+  required QueryIdProto queryId = 2;
+}
+
+message ProxyGroupProto {
+  required string groupName = 1;
+  repeated string tableNames = 2;
+}
+
+message ProxyGroupList {
+  repeated ProxyGroupProto groups = 1;
+  required ServerResponse response = 2;
+}
+
+message ProxyUserProto {
+  required string userId = 1;
+  required string password = 2;
+  repeated ProxyGroupProto groups = 3;
+  optional SessionIdProto sessionId = 4;
+}
+
+message ProxyUserList {
+  repeated ProxyUserProto users = 1;
+  required ServerResponse response = 2;
+}
+
+message CreateProxySessionRequest {
+  required ProxyUserProto user = 1;
+  required string defaultDatabase = 2;
+}
+
+message GrantTableRequest {
+  required SessionIdProto sessionId = 1;
+  required string groupName = 2;
+  required bool grant = 3;
+  repeated string tableNames = 4;
+}
+
+message QueryInfoListRequest {
+  required SessionIdProto sessionId = 1;
+  optional string userId = 2;
+}
+
+message QueryInfoProto {
+  required GetQueryStatusResponse queryStatus = 1;
+  required string userId = 2;
+  optional string externalUserId = 3;
+  optional string externalQueryId = 4;
+  required string query = 5;
+}
+
+message QueryInfoList {
+  repeated QueryInfoProto queries = 1;
+}
+
+message ChangePasswordRequest {
+  required SessionIdProto sessionId = 1;
+  required string userId = 2;
+  required string password = 3;
+}
+
+message GroupUserRequest {
+  required SessionIdProto sessionId = 1;
+  required string groupName = 2;
+  repeated string userIds = 3;
+  required bool remove = 4;
+}
+
+service ProxyServerClientProtocolService {
+  rpc submitQuery(QueryRequest) returns (GetQueryStatusResponse);
+//  rpc explainQuery(ExplainQueryRequest) returns (ExplainQueryResponse);
+  rpc getQueryResult(ProxyQueryResultRequest) returns (ProxyQueryResult);
+  rpc getQueryList(GetQueryListRequest) returns (GetQueryListResponse);
+  rpc getQueryStatus(GetQueryStatusRequest) returns (GetQueryStatusResponse);
+  rpc killQuery(QueryIdRequest) returns (ServerResponse);
+  rpc getClusterInfo(GetClusterInfoRequest) returns (GetClusterInfoResponse);
+  rpc existTable(SessionedStringProto) returns (ServerResponse);
+  rpc getTableList(GetTableListRequest) returns (GetTableListResponse);
+  rpc getTableDesc(GetTableDescRequest) returns (TableResponse);
+  rpc dropTable(DropTableRequest) returns (ServerResponse);
+  rpc getFunctionList(SessionedStringProto) returns (FunctionResponse);
+  rpc closeQuery(CloseQueryRequest) returns (ServerResponse);
+  rpc createSession(CreateProxySessionRequest) returns (ServerResponse);
+  rpc closeSession(SessionIdProto) returns (ServerResponse);
+  rpc refreshSession(SessionIdProto) returns (ServerResponse);
+  rpc selectDatabase(SessionedStringProto) returns (ServerResponse);
+  rpc getCurrentDatabase(SessionIdProto) returns (StringProto);
+  rpc getAllDatabases(SessionIdProto) returns (StringListProto);
+  rpc createDatabase(SessionedStringProto) returns (ServerResponse);
+  rpc dropDatabase(SessionedStringProto) returns (ServerResponse);
+  rpc existDatabase(SessionedStringProto) returns (ServerResponse);
+  rpc getAllSessionVariables(SessionIdProto) returns (KeyValueSetProto);
+  rpc updateSessionVariables(UpdateSessionVariableRequest) returns (BoolProto);
+  rpc addProxyUser(ProxyUserProto) returns (ServerResponse);
+  rpc deleteProxyUser(ProxyUserProto) returns (ServerResponse);
+  rpc listProxyGroups(SessionIdProto) returns (ProxyGroupList);
+  rpc listProxyUsers(SessionIdProto) returns (ProxyUserList);
+  rpc grantTableToGroup(GrantTableRequest) returns (ServerResponse);
+  rpc changePassword(ChangePasswordRequest) returns (ServerResponse);
+  rpc addGroup(SessionedStringProto) returns (ServerResponse);
+  rpc deleteGroup(SessionedStringProto) returns (ServerResponse);
+  rpc changeGroupUsers(GroupUserRequest) returns (ServerResponse);
+  rpc reloadProxyUserMeta(SessionIdProto) returns (ServerResponse);
+//  rpc listUserQueries(QueryInfoListRequest) returns (QueryInfoList);
+}

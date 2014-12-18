@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Start tajo-cli.
+
+bin=`dirname "$0"`
+bin=`cd "$bin"; pwd`
+
+. "$bin"/tajo-proxy-config.sh
+
+if [ -f "${TAJO_PROXY_CONF_DIR}/tajo-proxy-env.sh" ]; then
+  . "${TAJO_PROXY_CONF_DIR}/tajo-proxy-env.sh"
+fi
+
+"$bin"/tajo-proxy cli "$@"
