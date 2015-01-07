@@ -482,7 +482,7 @@ public class TajoProxyClient implements TajoClientInterface {
     ResultSet resultSet = null;
     if (queryResult.hasSchema()) {
       resultSet = new TajoMemoryResultSet(new Schema(queryResult.getSchema()),
-        queryResult.getRowsList(), queryResult.getRowsCount());
+        queryResult.getRowsList(), queryResult.getRowsCount(), null);
     } else {
       resultSet = new TajoResultSet(this, queryId, characterEncoding, queryResult);
     }

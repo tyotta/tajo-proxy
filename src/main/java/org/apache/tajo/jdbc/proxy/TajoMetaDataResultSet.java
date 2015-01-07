@@ -14,6 +14,7 @@ public class TajoMetaDataResultSet extends TajoResultSetBase {
   private List<MetaDataTuple> values;
 
   public TajoMetaDataResultSet(List<String> columns, List<Type> types, List<MetaDataTuple> values) {
+    super(null);
     init();
     schema = new Schema();
 

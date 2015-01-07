@@ -7,7 +7,7 @@
 
     <groupId>org.apache.tajo</groupId>
     <artifactId>tajo-proxy</artifactId>
-    <version>0.9.1-SNAPSHOT</version>
+    <version>0.10.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Tajo Proxy Server</name>
@@ -35,8 +35,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <tajo.version>0.9.1-SNAPSHOT</tajo.version>
-        <hadoop.version>2.5.0-cdh5.2.0</hadoop.version>
+        <tajo.version>0.10.0-SNAPSHOT</tajo.version>
+        <hadoop.version>2.5.0-cdh5.3.0</hadoop.version>
         <protobuf.version>2.5.0</protobuf.version>
         <netty.version>3.6.6.Final</netty.version>
         <tajo.src>/tmp/workspace/tajo</tajo.src>
@@ -50,8 +50,8 @@
     </licenses>
 
     <organization>
-        <name>Gruter</name>
-        <url>http://www.gruter.com</url>
+        <name>SKT</name>
+        <url>http://www.sktelecom.com</url>
     </organization>
 
     <build>
@@ -374,7 +374,7 @@
             <artifactId>tajo-client</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-client-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-client-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -383,7 +383,7 @@
             <artifactId>tajo-common</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-common-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-common-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -392,7 +392,7 @@
             <artifactId>tajo-catalog-common</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-catalog-common-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-catalog-common-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -401,16 +401,26 @@
             <artifactId>tajo-rpc</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-rpc-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-rpc-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
         <dependency>
             <groupId>org.apache.tajo</groupId>
-            <artifactId>tajo-storage</artifactId>
+            <artifactId>tajo-storage-common</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-storage-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-storage-common-0.10.0-SNAPSHOT.jar</systemPath>
+            <optional>false</optional>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.tajo</groupId>
+            <artifactId>tajo-storage-hdfs</artifactId>
+            <version>${tajo.version}</version>
+            <scope>system</scope>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-storage-hdfs-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -419,7 +429,7 @@
           <artifactId>tajo-core</artifactId>
           <version>${tajo.version}</version>
           <scope>system</scope>
-          <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-core-0.9.1-SNAPSHOT.jar</systemPath>
+          <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-core-0.10.0-SNAPSHOT.jar</systemPath>
           <optional>false</optional>
         </dependency>
 
@@ -429,7 +439,7 @@
             <version>${tajo.version}</version>
             <type>test-jar</type>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-core/target/tajo-core-0.9.1-SNAPSHOT-tests.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-core/target/tajo-core-0.10.0-SNAPSHOT-tests.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -438,7 +448,7 @@
             <artifactId>tajo-catalog-server</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-storage-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-catalog-server-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -447,7 +457,7 @@
             <artifactId>tajo-catalog-client</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-catalog-client-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-catalog-client-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -456,16 +466,16 @@
             <artifactId>tajo-algebra</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-algebra-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-algebra-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
         <dependency>
             <groupId>org.apache.tajo</groupId>
-            <artifactId>tajo-yarn-pullserver</artifactId>
+            <artifactId>tajo-pullserver</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-yarn-pullserver-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-pullserver-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 
@@ -474,7 +484,7 @@
             <artifactId>tajo-plan</artifactId>
             <version>${tajo.version}</version>
             <scope>system</scope>
-            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.9.1-SNAPSHOT/tajo-plan-0.9.1-SNAPSHOT.jar</systemPath>
+            <systemPath>${tajo.src}/tajo-dist/target/tajo-0.10.0-SNAPSHOT/tajo-plan-0.10.0-SNAPSHOT.jar</systemPath>
             <optional>false</optional>
         </dependency>
 

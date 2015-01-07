@@ -35,7 +35,7 @@ public class TajoResultSet extends TajoResultSetBase {
                        QueryId queryId,
                        String characterEncoding,
                        ProxyServerClientProtocol.ProxyQueryResult queryResult) {
-    super();
+    super(null);
 
     this.tajoProxyClient = tajoProxyClient;
     this.queryId = queryId;
