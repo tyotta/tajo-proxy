@@ -366,6 +366,10 @@ public class ProxyUserAdmin {
     String result = encoder.encodeBuffer(raw);
 
     // last char is LF
-    return result.substring(0, result.length() - 1);
+    //return result.substring(0, result.length() - 1);
+    if (result.endsWith("\r\n"))
+      return result.substring(0, result.length() - 2);
+    else
+      return result.substring(0, result.length() - 1);
   }
 }
