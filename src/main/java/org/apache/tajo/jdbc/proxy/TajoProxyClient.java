@@ -105,7 +105,7 @@ public class TajoProxyClient implements TajoClientInterface {
 
     this.rand = new Random(System.currentTimeMillis());
 
-    rpcPool = RpcConnectionPool.newPool(conf, getClass().getSimpleName(),
+    rpcPool = RpcConnectionPool.newPool(getClass().getSimpleName(),
         conf.getInt("tajo-proxy.jdbc.rpc.workers", 5));
   }
 
@@ -1051,7 +1051,7 @@ public class TajoProxyClient implements TajoClientInterface {
           keyValueSet.putAll(variables);
           UpdateSessionVariableRequest request = UpdateSessionVariableRequest.newBuilder()
               .setSessionId(sessionId)
-              .setSetVariables(keyValueSet.getProto()).build();
+              .setSessionVars(keyValueSet.getProto()).build();
 
           try {
             return proxyService.updateSessionVariables(null, request).getValue();

@@ -22,8 +22,11 @@ option java_outer_classname = "TajoResourceTrackerProtocol";
 option java_generic_services = true;
 option java_generate_equals_and_hash = true;
 
-import "TajoMasterProtocol.proto";
+import "QueryCoordinatorProtocol.proto";
+import "ContainerProtocol.proto";
 import "tajo_protos.proto";
+
+package hadoop.yarn;
 
 message NodeHeartbeat {
   required WorkerConnectionInfoProto connectionInfo = 1;

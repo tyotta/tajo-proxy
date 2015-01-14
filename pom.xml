@@ -148,8 +148,10 @@
                                      tofile="${basedir}/src/main/proto/TajoIdProtos.proto"/>
                                 <copy file="${tajo.src}/tajo-client/src/main/proto/TajoMasterClientProtocol.proto"
                                      tofile="${basedir}/src/main/proto/TajoMasterClientProtocol.proto"/>
-                                <copy file="${tajo.src}/tajo-core/src/main/proto/TajoMasterProtocol.proto"
-                                     tofile="${basedir}/src/main/proto/TajoMasterProtocol.proto"/>
+                                <copy file="${tajo.src}/tajo-core/src/main/proto/QueryCoordinatorProtocol.proto"
+                                     tofile="${basedir}/src/main/proto/QueryCoordinatorProtocol.proto"/>
+                                <copy file="${tajo.src}/tajo-core/src/main/proto/ContainerProtocol.proto"
+                                     tofile="${basedir}/src/main/proto/ContainerProtocol.proto"/>
                                 <copy file="${tajo.src}/tajo-core/src/main/proto/TajoWorkerProtocol.proto"
                                      tofile="${basedir}/src/main/proto/TajoWorkerProtocol.proto"/>
                                 <copy file="${tajo.src}/tajo-common/src/main/proto/TestProtos.proto"
@@ -199,7 +201,8 @@
                                 <argument>src/main/proto/tajo_protos.proto</argument>
                                 <argument>src/main/proto/TajoIdProtos.proto</argument>
                                 <argument>src/main/proto/TajoMasterClientProtocol.proto</argument>
-                                <argument>src/main/proto/TajoMasterProtocol.proto</argument>
+                                <argument>src/main/proto/QueryCoordinatorProtocol.proto</argument>
+                                <argument>src/main/proto/ContainerProtocol.proto</argument>
                                 <argument>src/main/proto/TajoWorkerProtocol.proto</argument>
                                 <argument>src/main/proto/TestProtos.proto</argument>
                                 <argument>src/main/proto/yarn_protos.proto</argument>

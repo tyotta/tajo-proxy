@@ -1055,9 +1055,9 @@ public class ProxyClientRpcService extends AbstractService {
         throws ServiceException {
       TajoClient tajoClient = getTajoClient(request.getSessionId());
 
-      if (request.getSetVariables() != null) {
+      if (request.getSessionVars() != null) {
         Map<String, String> sessionVariable = new HashMap<String, String>();
-        for (KeyValueProto eachVariable : request.getSetVariables().getKeyvalList()) {
+        for (KeyValueProto eachVariable : request.getSessionVars().getKeyvalList()) {
           sessionVariable.put(eachVariable.getKey(), eachVariable.getValue());
         }
         tajoClient.updateSessionVariables(sessionVariable);

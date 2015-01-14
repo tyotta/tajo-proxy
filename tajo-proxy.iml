@@ -12,6 +12,39 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-common:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-annotations:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mortbay.jetty:jetty-util:6.1.26.cloudera.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.avro:avro:1.7.6-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-auth:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.5-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-minicluster:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-common:test-jar:tests:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-hdfs:test-jar:tests:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:test-jar:tests:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-common:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-app:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-hs:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-hdfs:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-client:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-nodemanager:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-yarn-server-resourcemanager:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-yarn-server-applicationhistoryservice:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-web-proxy:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-server-common:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.apache.hadoop:hadoop-yarn-server-tests:test-jar:tests:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-client:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-aws:2.5.0-cdh5.3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk:1.7.4" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.6" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: org.apache.tajo:tajo-client:0.10.0-SNAPSHOT">
         <CLASSES>
@@ -231,7 +264,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.2.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.3" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk:1.7.4" level="project" />
-    <orderEntry type="library" name="Maven: joda-time:joda-time:2.6" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.7" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.5.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.6.6.Final" level="project" />

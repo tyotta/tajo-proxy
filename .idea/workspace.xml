@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dab55db5-325b-46c1-b73b-2a0f63f1b966" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tajo-proxy.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BUILDING.txt" afterPath="$PROJECT_DIR$/BUILDING.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/DefaultTajoCliOutputFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/DefaultTajoCliOutputFormatter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/DescFunctionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/DescFunctionCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/DescTableCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/DescTableCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/ExecExternalShellCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/ExecExternalShellCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/ExitCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/ExitCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/HelpCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/HelpCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/ListDatabaseCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/ListDatabaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/MetaDataTuple.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/MetaDataTuple.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/proto/ClientProtos.proto" afterPath="$PROJECT_DIR$/src/main/proto/ClientProtos.proto" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/ProxyClientRpcService.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/ProxyClientRpcService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/TableAccessControlManager.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/TableAccessControlManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoGetConf.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoGetConf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoProxyCli.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoProxyCli.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoProxyCliOutputFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoProxyCliOutputFormatter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/TajoResultSet.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/TajoResultSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/UnsetCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/UnsetCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/VersionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/VersionCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/proto/ProxyServerClientProtocol.proto" afterPath="$PROJECT_DIR$/src/main/proto/ProxyServerClientProtocol.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/proto/QueryMasterClientProtocol.proto" afterPath="$PROJECT_DIR$/src/main/proto/QueryMasterClientProtocol.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/proto/ResourceTrackerProtocol.proto" afterPath="$PROJECT_DIR$/src/main/proto/ResourceTrackerProtocol.proto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/TajoProxyClient.java" afterPath="$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/TajoProxyClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/bin/tajo-proxy" afterPath="$PROJECT_DIR$/src/main/bin/tajo-proxy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tajo-proxy.iml" afterPath="$PROJECT_DIR$/tajo-proxy.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tajo-proxy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,8 +71,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -90,14 +80,72 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TajoGetConf.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TajoGetConf.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoGetConf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.96153843" vertical-offset="225" max-vertical-offset="2205">
-              <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2205">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProxyClientRpcService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/ProxyClientRpcService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4004525" vertical-offset="15258" max-vertical-offset="26145">
+              <caret line="1059" column="66" selection-start-line="1059" selection-start-column="66" selection-end-line="1059" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2968#3015#0" expanded="true" />
+                <element signature="e#35695#35710#0" expanded="true" />
+                <element signature="e#50755#50771#0" expanded="true" />
+                <element signature="e#52172#52189#0" expanded="true" />
+                <element signature="e#66998#67032#0" expanded="true" />
+                <element signature="e#69452#69481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientProtos.proto" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/proto/ClientProtos.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.4444447" vertical-offset="3513" max-vertical-offset="4620">
+              <caret line="244" column="27" selection-start-line="244" selection-start-column="11" selection-end-line="244" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrimitiveProtos.proto" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/proto/PrimitiveProtos.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="900">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProxyServerClientProtocol.proto" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/proto/ProxyServerClientProtocol.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.777778" vertical-offset="1173" max-vertical-offset="2400">
+              <caret line="103" column="2" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TajoProxyClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/TajoProxyClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="14906" max-vertical-offset="22485">
+              <caret line="1052" column="23" selection-start-line="1052" selection-start-column="23" selection-end-line="1052" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,14 +165,30 @@
       <MyDateState />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/proto/ProxyServerClientProtocol.proto" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/TajoProxyClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/ProxyClientRpcService.java" />
+      </list>
+    </option>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1661" />
-    <option name="y" value="43" />
+    <option name="x" value="-46" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -154,8 +218,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,7 +234,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tajo-proxy-CDH5.2.0" />
+              <option name="myItemId" value="tajo-proxy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -180,7 +244,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tajo-proxy-CDH5.2.0" />
+              <option name="myItemId" value="tajo-proxy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -194,25 +258,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tajo-proxy-CDH5.2.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="tajo-proxy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tajo-proxy-CDH5.2.0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -223,12 +269,26 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="tajo-proxy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tajo-proxy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tajo" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proto" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,7 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tajo-proxy-CDH5.2.0" />
+              <option name="myItemId" value="tajo-proxy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -255,10 +315,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tajo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="proxy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,6 +332,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="FullScreen" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -539,14 +596,15 @@
       <workItem from="1416364031555" duration="3314000" />
       <workItem from="1418716884767" duration="906000" />
       <workItem from="1418776153846" duration="618000" />
+      <workItem from="1421199941812" duration="1484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4838000" />
+    <option name="totallyTimeSpent" value="6322000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1661" y="43" width="1440" height="877" extended-state="6" />
+    <frame x="-46" y="23" width="1440" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -555,6 +613,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880434" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -565,20 +624,22 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24930556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33109018" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.proto" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -619,6 +680,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoGetConf.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2205">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoGetConf.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2205">
           <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
           <folding>
@@ -645,13 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/proto/org/apache/tajo/catalog/proto/CatalogProtos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136905" max-vertical-offset="455895">
-          <caret line="9548" column="80" selection-start-line="9548" selection-start-column="73" selection-end-line="9548" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -746,13 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/proto/org/apache/tajo/catalog/proto/CatalogProtos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136905" max-vertical-offset="455895">
-          <caret line="9548" column="80" selection-start-line="9548" selection-start-column="73" selection-end-line="9548" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/HDFSProxyUserStore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09664948" vertical-offset="0" max-vertical-offset="1665">
@@ -774,19 +831,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/ProxyClientRpcService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoGetConf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="26145">
-          <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="2205">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/cli/TajoGetConf.java">
+    <entry file="file://$PROJECT_DIR$/src/main/proto/ProxyServerClientProtocol.proto">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96153843" vertical-offset="225" max-vertical-offset="2205">
-          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+        <state vertical-scroll-proportion="-13.777778" vertical-offset="1173" max-vertical-offset="2400">
+          <caret line="103" column="2" selection-start-line="103" selection-start-column="2" selection-end-line="103" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/ClientProtos.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.4444447" vertical-offset="3513" max-vertical-offset="4620">
+          <caret line="244" column="27" selection-start-line="244" selection-start-column="11" selection-end-line="244" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/PrimitiveProtos.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="431" max-vertical-offset="900">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/jdbc/proxy/TajoProxyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14906" max-vertical-offset="22485">
+          <caret line="1052" column="23" selection-start-line="1052" selection-start-column="23" selection-end-line="1052" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/apache/tajo/proxy/ProxyClientRpcService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4004525" vertical-offset="15258" max-vertical-offset="26145">
+          <caret line="1059" column="66" selection-start-line="1059" selection-start-column="66" selection-end-line="1059" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2968#3015#0" expanded="true" />
+            <element signature="e#35695#35710#0" expanded="true" />
+            <element signature="e#50755#50771#0" expanded="true" />
+            <element signature="e#52172#52189#0" expanded="true" />
+            <element signature="e#66998#67032#0" expanded="true" />
+            <element signature="e#69452#69481#0" expanded="true" />
           </folding>
         </state>
       </provider>

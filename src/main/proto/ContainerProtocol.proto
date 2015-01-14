@@ -16,17 +16,33 @@
  * limitations under the License.
  */
 
+/**
+ * These .proto interfaces are public and stable.
+ * Please see http://wiki.apache.org/hadoop/Compatibility
+ * for what changes are allowed for a *stable* .proto interface.
+ */
+
 option java_package = "org.apache.tajo.ipc";
-option java_outer_classname = "QueryMasterClientProtocol";
+option java_outer_classname = "ContainerProtocol";
 option java_generic_services = true;
 option java_generate_equals_and_hash = true;
 
-import "tajo_protos.proto";
-import "TajoIdProtos.proto";
-import "CatalogProtos.proto";
-import "PrimitiveProtos.proto";
-import "ClientProtos.proto";
+package hadoop.yarn;
 
-service QueryMasterClientProtocolService {
-  rpc getQueryHistory(QueryIdRequest) returns (GetQueryHistoryResponse);
+import "Security.proto";
+import "yarn_protos.proto";
+
+message TajoContainerIdProto {
+  optional ApplicationIdProto app_id = 1;
+  optional ApplicationAttemptIdProto app_attempt_id = 2;
+  optional int32 id = 3;
+}
+
+message TajoContainerProto {
+  optional TajoContainerIdProto id = 1;
+  optional NodeIdProto nodeId = 2;
+  optional string node_http_address = 3;
+  optional ResourceProto resource = 4;
+  optional PriorityProto priority = 5;
+  optional hadoop.common.TokenProto container_token = 6;
 }
