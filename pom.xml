@@ -36,7 +36,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <tajo.version>0.9.1-SNAPSHOT</tajo.version>
-        <hadoop.version>2.5.0-cdh5.2.0</hadoop.version>
+        <hadoop.version>2.5.0-cdh5.3.0</hadoop.version>
         <protobuf.version>2.5.0</protobuf.version>
         <netty.version>3.6.6.Final</netty.version>
         <tajo.src>/tmp/workspace/tajo</tajo.src>
@@ -156,6 +156,8 @@
                                      tofile="${basedir}/src/main/proto/TestProtos.proto"/>
                                 <copy file="${tajo.src}/tajo-common/src/main/proto/yarn_protos.proto"
                                      tofile="${basedir}/src/main/proto/yarn_protos.proto"/>
+                                <copy file="${tajo.src}/tajo-plan/src/main/proto/Plan.proto"
+                                     tofile="${basedir}/src/main/proto/Plan.proto"/>
                             </tasks>
                         </configuration>
                     </execution>

@@ -86,22 +86,22 @@ message GrantTableRequest {
   repeated string tableNames = 4;
 }
 
-message QueryInfoListRequest {
-  required SessionIdProto sessionId = 1;
-  optional string userId = 2;
-}
+// message QueryInfoListRequest {
+//  required SessionIdProto sessionId = 1;
+//  optional string userId = 2;
+//}
 
-message QueryInfoProto {
-  required GetQueryStatusResponse queryStatus = 1;
-  required string userId = 2;
-  optional string externalUserId = 3;
-  optional string externalQueryId = 4;
-  required string query = 5;
-}
+//message QueryInfoProto {
+//  required GetQueryStatusResponse queryStatus = 1;
+//  required string userId = 2;
+//  optional string externalUserId = 3;
+//  optional string externalQueryId = 4;
+//  required string query = 5;
+//}
 
-message QueryInfoList {
-  repeated QueryInfoProto queries = 1;
-}
+//message QueryInfoList {
+//  repeated QueryInfoProto queries = 1;
+//}
 
 message ChangePasswordRequest {
   required SessionIdProto sessionId = 1;

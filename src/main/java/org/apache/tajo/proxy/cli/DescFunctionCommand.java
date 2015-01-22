@@ -41,11 +41,11 @@ public class DescFunctionCommand extends TajoProxyShellCommand {
     Collections.sort(functions, new Comparator<CatalogProtos.FunctionDescProto>() {
       @Override
       public int compare(CatalogProtos.FunctionDescProto f1, CatalogProtos.FunctionDescProto f2) {
-        int nameCompared = f1.getSignature().compareTo(f2.getSignature());
+        int nameCompared = f1.getSignature().getName().compareTo(f2.getSignature().getName());
         if (nameCompared != 0) {
           return nameCompared;
         } else {
-          return f1.getReturnType().getType().compareTo(f2.getReturnType().getType());
+          return f1.getSignature().getReturnType().getType().compareTo(f2.getSignature().getReturnType().getType());
         }
       }
     });
@@ -55,13 +55,13 @@ public class DescFunctionCommand extends TajoProxyShellCommand {
     int[] columnWidths = printHeader(headers, columnWidthRates);
 
     for(CatalogProtos.FunctionDescProto eachFunction: functions) {
-      String name = eachFunction.getSignature();
-      String resultDataType = eachFunction.getReturnType().getType().toString();
+      String name = eachFunction.getSignature().getName();
+      String resultDataType = eachFunction.getSignature().getReturnType().getType().toString();
       String arguments = FunctionUtil.buildParamTypeString(
-          eachFunction.getParameterTypesList().toArray(
-              new DataType[eachFunction.getParameterTypesCount()]));
-      String functionType = eachFunction.getType().toString();
-      String description = eachFunction.getDescription();
+          eachFunction.getSignature().getParameterTypesList().toArray(
+              new DataType[eachFunction.getSignature().getParameterTypesCount()]));
+      String functionType = eachFunction.getSignature().getType().toString();
+      String description = eachFunction.getSupplement().getShortDescription();
 
       int index = 0;
       printLeft(" " + name, columnWidths[index++]);
@@ -86,22 +86,22 @@ public class DescFunctionCommand extends TajoProxyShellCommand {
           new HashMap<String, CatalogProtos.FunctionDescProto>();
 
       for (CatalogProtos.FunctionDescProto eachFunction: functions) {
-        if (!functionMap.containsKey(eachFunction.getDescription())) {
-          functionMap.put(eachFunction.getDescription(), eachFunction);
+        if (!functionMap.containsKey(eachFunction.getSupplement().getShortDescription())) {
+          functionMap.put(eachFunction.getSupplement().getShortDescription(), eachFunction);
         }
       }
 
       for (CatalogProtos.FunctionDescProto eachFunction: functionMap.values()) {
-        String signature = eachFunction.getReturnType().getType() + " " +
-            FunctionUtil.buildSimpleFunctionSignature(eachFunction.getSignature(), eachFunction.getParameterTypesList());
-        String fullDescription = eachFunction.getDescription();
-        if(eachFunction.getDetail() != null && !eachFunction.getDetail().isEmpty()) {
-          fullDescription += "\n" + eachFunction.getDetail();
+        String signature = eachFunction.getSignature().getReturnType().getType() + " " +
+            FunctionUtil.buildSimpleFunctionSignature(eachFunction.getSignature().getName(), eachFunction.getSignature().getParameterTypesList());
+        String fullDescription = eachFunction.getSupplement().getShortDescription();
+        if(eachFunction.getSupplement().getDetail() != null && !eachFunction.getSupplement().getDetail().isEmpty()) {
+          fullDescription += "\n" + eachFunction.getSupplement().getDetail();
         }
 
         context.getOutput().println("Function:    " + signature);
         context.getOutput().println("Description: " + fullDescription);
-        context.getOutput().println("Example:\n" + eachFunction.getExample());
+        context.getOutput().println("Example:\n" + eachFunction.getSupplement().getExample());
         println();
       }
     }
